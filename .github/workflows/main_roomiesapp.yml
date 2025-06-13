@@ -64,9 +64,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_48471B2258DF4BB8AEFD7891441D761F }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4924515FC78647A7968952DA1856120A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1284B29A3AC84A0A9E23364AEBD25E3C }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_04C82C952D094EF5824793C5136AB4A1 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4636EEC0A6024B4AB807CCA6E88B2439 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_821ECADBA36F4688ACFDDE43DEF73C19 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -74,5 +74,5 @@ jobs:
         with:
           app-name: 'roomiesapp'
           slot-name: 'Production'
-          package: './'
+          package: .
           
